@@ -1,0 +1,11 @@
+/venv/
+venv/*
+venv/
+.idea/
+.vscode/
+.idea/*
+.vscode/*
+__pycache__/
+__pycache__/*
+.fleet/
+.fleet/*

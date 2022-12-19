@@ -1,0 +1,34 @@
+{
+  "places": [
+    {
+      "id": "41d4cb95-14bc-4648-84ae-8d535cdbd382",
+      "name": "P1",
+      "tokens": 3
+    },
+    {
+      "id": "e2bc0906-abf8-4e02-bba6-a242df1ff5ac",
+      "name": "P2",
+      "tokens": 0
+    }
+  ],
+  "transitions": [
+    {
+      "id": "4c4e3831-9917-4d51-884b-5a7a3e64b458",
+      "name": "T1"
+    }
+  ],
+  "inputs": [
+    {
+      "transition_id": "4c4e3831-9917-4d51-884b-5a7a3e64b458",
+      "place_id": "41d4cb95-14bc-4648-84ae-8d535cdbd382",
+      "number": 1
+    }
+  ],
+  "outputs": [
+    {
+      "transition_id": "4c4e3831-9917-4d51-884b-5a7a3e64b458",
+      "place_id": "e2bc0906-abf8-4e02-bba6-a242df1ff5ac",
+      "number": 1
+    }
+  ]
+}

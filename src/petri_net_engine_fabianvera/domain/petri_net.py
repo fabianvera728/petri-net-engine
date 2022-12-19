@@ -16,12 +16,26 @@ class PetriNet:
         self.outputs_matrix = []
         self.entries = []
         self.outputs = []
+        self.name = ''
 
     def add_place(self, place: Place):
         self.places_as_dict[place.place_id] = place
         self.places.append(place)
         self.markings.append(place.tokens)
         return True
+
+    def generate_places_as_dict(self):
+        self.places_as_dict = {}
+        for place in self.places:
+            self.places_as_dict[place.place_id] = place
+
+    def generate_transitions_as_dict(self):
+        self.transitions_as_dict = {}
+        for transition in self.transitions:
+            self.transitions_as_dict[transition.transition_id] = {
+                'transition': transition,
+                'index': self.transitions_as_dict.__len__()
+            }
 
     def add_transition(self, transition: Transition):
         self.transitions_as_dict[transition.transition_id] = {
@@ -41,6 +55,11 @@ class PetriNet:
 
     def get_markings(self):
         return np.array(self.markings)
+
+    def generate_markings(self):
+        self.markings = []
+        for place in self.places:
+            self.markings.append(place.tokens)
 
     def generate_inputs_matrix(self):
         inputs_matrix = []

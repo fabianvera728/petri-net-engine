@@ -9,6 +9,9 @@ src/petri_net_engine_fabianvera.egg-info/dependency_links.txt
 src/petri_net_engine_fabianvera.egg-info/top_level.txt
 src/petri_net_engine_fabianvera/application/__init__.py
 src/petri_net_engine_fabianvera/application/create_petri_net_engine.py
+src/petri_net_engine_fabianvera/application/from_event_log_to_petri_net.py
+src/petri_net_engine_fabianvera/application/from_json_to_petri_net.py
+src/petri_net_engine_fabianvera/application/from_petri_net.py
 src/petri_net_engine_fabianvera/domain/__init__.py
 src/petri_net_engine_fabianvera/domain/petri_net.py
 src/petri_net_engine_fabianvera/domain/petri_net_engine.py
